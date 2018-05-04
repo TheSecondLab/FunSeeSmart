@@ -2,3 +2,8 @@
 /lib
 .gitignore
 .babelrc
+.eslintrc.js
+.webpack.config.js
+/App.js
+/test
+/view
