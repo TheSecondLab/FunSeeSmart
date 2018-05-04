@@ -10,35 +10,41 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "smart": "webpack --progress --config ./webpack.config.js",
     "start": "webpack-dev-server --hot --inline",
-    "build": "./node_modules/.bin/babel -s inline -d dist lib",
-    "prepublish": "npm run build"
+    "babel": "rimraf ./dist && ./node_modules/.bin/babel ./lib -d ./dist",
+    "prepublish": "npm run babel"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TheSecondLab/FunSeeSmart.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "funsee",
+    "generator",
+    "crud"
+  ],
+  "author": "Breeze_微风",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/TheSecondLab/FunSeeSmart/issues"
   },
   "homepage": "https://github.com/TheSecondLab/FunSeeSmart#readme",
   "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-plugin-import": "^1.7.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^0.28.11",
-    "extract-text-webpack-plugin": "^3.0.2",
-    "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "eslint": "^4.19.1",
     "eslint-config-funsee": "0.0.2",
+    "extract-text-webpack-plugin": "^3.0.2",
     "html-webpack-plugin": "^3.2.0",
     "less": "^2.7.2",
     "less-loader": "^2.2.3",

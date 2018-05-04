@@ -62,3 +62,4 @@ typings/
 /App.js
 /webpack.config.js
 /.eslintrc.js
+/dist

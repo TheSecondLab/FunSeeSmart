@@ -1,8 +1,10 @@
-import { smart, autobind } from './lib/util/decorators';
-import { fieldBuilder, formBuilder, tableBuilder } from './lib/util/generator';
-import { SearchForm, Table, Pagination, EditForm, CRUD } from './lib/components';
+const { smart, autobind } = require('./dist/util/decorators');
+const { fieldBuilder, formBuilder, tableBuilder } = require('./dist/util/generator');
+const {
+  SearchForm, Table, Pagination, EditForm, CRUD
+} = require('./dist/components');
 
-export default {
+module.exports = {
   smart,
   autobind,
   fieldBuilder,
