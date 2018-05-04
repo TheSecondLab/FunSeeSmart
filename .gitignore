@@ -57,3 +57,8 @@ typings/
 # dotenv environment variables file
 .env
 
+/view
+/test
+/App.js
+/webpack.config.js
+/.eslintrc.js
