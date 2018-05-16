@@ -6,6 +6,7 @@ const {
 const FIELD_TYPE = require('./dist/common/constant');
 const reducer = require('./dist/redux/reducer');
 const saga = require('./dist/redux/saga');
+const { smartAction } = require('./dist/redux/action');
 
 module.exports = {
   smart,
@@ -20,6 +21,7 @@ module.exports = {
   CRUD,
   FIELD_TYPE,
   reducer,
-  saga
+  saga,
+  smartAction
 };
 
