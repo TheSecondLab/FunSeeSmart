@@ -4,8 +4,8 @@ const {
   SearchForm, Table, Pagination, EditForm, CRUD
 } = require('./dist/components');
 const FIELD_TYPE = require('./dist/common/constant');
-const reducer = require('./dist/redux/reducer');
-const saga = require('./dist/redux/saga');
+const smartReducer = require('./dist/redux/reducer');
+const smartSaga = require('./dist/redux/saga');
 const { smartAction } = require('./dist/redux/action');
 
 module.exports = {
@@ -20,8 +20,8 @@ module.exports = {
   EditForm,
   CRUD,
   FIELD_TYPE,
-  reducer,
-  saga,
+  smartReducer,
+  smartSaga,
   smartAction
 };
 
