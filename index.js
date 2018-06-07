@@ -1,4 +1,5 @@
 const { smart, autobind } = require('./dist/util/decorators');
+const { showSuccess, showError } = require('./dist/util/notification');
 const { fieldBuilder, formBuilder, tableBuilder } = require('./dist/util/generator');
 const {
   SearchForm, Table, Pagination, EditForm, CRUD
@@ -11,6 +12,8 @@ const { smartAction } = require('./dist/redux/action');
 module.exports = {
   smart,
   autobind,
+  showSuccess,
+  showError,
   fieldBuilder,
   formBuilder,
   tableBuilder,
