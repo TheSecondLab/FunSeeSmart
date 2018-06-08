@@ -1,5 +1,6 @@
 const { smart, autobind } = require('./dist/util/decorators');
 const { showSuccess, showError } = require('./dist/util/notification');
+const funseeSmartMidWare = require('./dist/util/funseeSmartMidWare');
 const { fieldBuilder, formBuilder, tableBuilder } = require('./dist/util/generator');
 const {
   SearchForm, Table, Pagination, EditForm, CRUD
@@ -14,6 +15,7 @@ module.exports = {
   autobind,
   showSuccess,
   showError,
+  funseeSmartMidWare,
   fieldBuilder,
   formBuilder,
   tableBuilder,
