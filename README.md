@@ -8,11 +8,11 @@ funsee-smart作为一个增删改查型<CRUD>页面的快速构造工具,服务�
 
 ## 相关技术栈
 react@16  
-antd@3.4.3
-react-redux
+antd@3.4.3  
+react-redux  
 redux-saga  
-moment
-immutable
+moment  
+immutable  
 
 ## 文档
 请查阅[FunSee Wiki](https://github.com/TheSecondLab/FunSeeSmart/wiki)
